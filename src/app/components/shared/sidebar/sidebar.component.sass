@@ -1,0 +1,59 @@
+@import 'src/assets/sass/base'
+.sidebar-main
+  width: 240px
+  border-right: 1px solid rgba(0,0,0,.12)
+  position: fixed
+  height: 100%
+  top: 0
+  bottom: 0
+  left: 0
+  // -webkit-transform: translate3d(-240px,0,0)
+  // transform: translate3d(-240px,0,0)
+  z-index: 1204
+  background: $gris_ligth
+  // -webkit-transition: all 280ms cubic-bezier(.4,0,.2,1)
+  transition: all 280ms cubic-bezier(.4,0,.2,1)
+.scrollbar-inner
+  height: 100% !important
+  max-height: 100%
+  overflow-y: auto
+.sidebar-main-header
+  background-image: url('../../../../assets/img/sidebar_head_dark.png')
+  background-size: 240px 88px
+.sidebar-logo
+  height: 88px
+  line-height: 48px
+  overflow: hidden
+
+.menu-section ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+ul
+  display: block
+  list-style-type: disc
+  margin-block-start: 1em
+  margin-block-end: 1em
+  margin-inline-start: 0px
+  margin-inline-end: 0px
+  padding-inline-start: 40px
+  li
+    a
+      font: 500 14px/25px Roboto,sans-serif
+      color: #fff
+      padding: 8px 20px
+      display: block
+      overflow: hidden
+      position: relative
+      .menu_icon
+        width: 48px
+        text-align: left
+        display: inline-block
+        color: #fff
+        .material-icons
+          font-size: 24px
+          vertical-align: top
+
+      .menu_title
+        display: inline-block

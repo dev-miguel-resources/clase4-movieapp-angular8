@@ -1,0 +1,14 @@
+{
+    "/api/*": {
+        "target": "https://api.themoviedb.org",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    },
+    "/remote_addr/*": {
+        "target": "https://api.themoviedb.org",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

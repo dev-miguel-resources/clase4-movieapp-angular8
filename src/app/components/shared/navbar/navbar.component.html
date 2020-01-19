@@ -1,0 +1,13 @@
+<header class="header-main">
+  <nav class="uk-navbar">
+    <div class="uk-navbar-flip">
+      <ul class="uk-navbar-nav">
+        <li>
+          <input [(ngModel)]="searchData" (keyup.enter)="getMoviesSearch()" style="width: 300px" class="mr5" type="text"
+            placeholder="Buscar...">
+          <button [disabled]="!searchData" (click)="getMoviesSearch()">Buscar</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

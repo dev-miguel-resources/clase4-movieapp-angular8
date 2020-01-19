@@ -1,0 +1,24 @@
+<div *ngIf="movie" class="row">
+  <div class="col-12">
+    <button pButton type="button" (click)="movieService.nextData('');location.back();" class="btn btn-default btn-sm btn-size-standar"><i
+        class="material-icons">
+        keyboard_backspace
+      </i></button>
+  </div>
+  <div class="col-4">
+    <img width="100%" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="{{movie.poster_path}}">
+  </div>
+  <div class="col-8">
+    <h1>{{movie.title}}</h1>
+    <p>{{movie.overview}}</p>
+    <h2>Titulo original: {{movie.original_title}}</h2>
+    <h2 class="uk-text-muted">Popularidad: {{movie.popularity}}</h2>
+    <h2 class="uk-text-muted">Cantidad de votos: {{movie.vote_count}}</h2>
+    <h2 class="uk-text-muted">Promedio: {{movie.vote_average}}</h2>
+    <h2 class="uk-text-muted">Fecha lanzamiento: {{movie.release_date | date: 'medium' }}</h2>
+  </div>
+</div>
+
+<div *ngIf="!movie">
+  Cargando...
+</div>
